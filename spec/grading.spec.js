@@ -26,7 +26,8 @@ describe ("Grading Tests: ", function () {
       stylesElement.textContent = css;
       window.document.head.appendChild(stylesElement);
 
-      container = window.document; // moving / copied per TA Shawn Jones' bug report
+      // commented out container addition to see if same tests fail, further troubleshooting
+      // container = window.document; // moving / copied per TA Shawn Jones' bug report
       window.addEventListener("load", function() {
          container = window.document;
       });
